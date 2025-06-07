@@ -21,6 +21,18 @@ public class Enemigo extends Personaje implements ICombatiente {
     }
 
     @Override
+    public void recibirDanio(int danio) {
+        if (danio>0){
+            setSalud(Math.max(0, this.getSalud()-danio));
+            System.out.println(
+                    getNombre() + " recibio "+ danio
+                            + " de danio. Salud actual: "+ getSalud()
+            );
+        }
+    }
+
+
+    @Override
     public boolean estaVivo() {
         return false;
     }

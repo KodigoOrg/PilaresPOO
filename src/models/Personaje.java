@@ -2,7 +2,7 @@ package models;
 
 public class Personaje {
     private String nombre;
-    private int salud;
+    private double salud;
     private int nivel;
     private int energia;
 
@@ -22,7 +22,7 @@ public class Personaje {
      * @param nivel
      * @param energia
      */
-    public Personaje(String nombre, int salud, int nivel, int energia) {
+    public Personaje(String nombre, double salud, int nivel, int energia) {
         this.nombre = nombre;
         this.salud = salud;
         this.nivel = nivel;
@@ -33,7 +33,7 @@ public class Personaje {
      * Metodo para recibir danio de personaje
      * @param danio
      */
-    public void recibirDanio(int danio){
+    public void recibirDanio(double danio){
         if (danio>0){
             this.salud = Math.max(0, this.salud-danio);
             System.out.println(
@@ -67,11 +67,11 @@ public class Personaje {
         this.nombre = nombre;
     }
 
-    public int getSalud() {
+    public double getSalud() {
         return salud;
     }
 
-    public void setSalud(int salud) {
+    public void setSalud(double salud) {
         this.salud = salud;
     }
 
