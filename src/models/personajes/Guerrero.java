@@ -10,6 +10,7 @@ public class Guerrero extends Personaje{
         this.defensa = defensa;
     }
 
+
     public void atacar(Enemigo enemigo){
         if (usarEnergia(10)){
             int danio =  this.fuerza * 2;
