@@ -1,4 +1,4 @@
-package models;
+package models.personajes;
 
 import interfaces.ICombatiente;
 

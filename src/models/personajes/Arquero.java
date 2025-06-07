@@ -1,4 +1,4 @@
-package models;
+package models.personajes;
 
 public class Arquero extends Personaje{
     private int destreza;
@@ -20,10 +20,11 @@ public class Arquero extends Personaje{
             double danio = destreza * 2.5;
             System.out.println(this.getNombre()+ " dispara una flecha a " +
                     objetivo.getNombre() + " causando " + danio + " de danio"
-
             );
-
-            objetivo.recibirDanio( (int) danio );
+            objetivo.recibirDanio( danio );
+        }else{
+            System.out.println(getNombre() + " no tienes flechas suficientes o estas cansado");
         }
+
     }
 }

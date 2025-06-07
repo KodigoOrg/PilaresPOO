@@ -1,6 +1,6 @@
 package interfaces;
 
-import models.Personaje;
+import models.personajes.Personaje;
 
 public interface ICombatiente {
     void atacar(Personaje objetivo);

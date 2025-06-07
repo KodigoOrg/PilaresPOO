@@ -1,4 +1,4 @@
-package models;
+package models.personajes;
 
 public class Guerrero extends Personaje{
     private int fuerza;
