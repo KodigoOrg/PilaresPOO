@@ -14,6 +14,5 @@ public class CombateUtils {
         }else if (atacante instanceof Arquero){
             ((Arquero)atacante).atacar((Enemigo)defensor);
         }
-
     }
 }
